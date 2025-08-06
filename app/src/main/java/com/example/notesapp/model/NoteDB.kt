@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase
 @Database([NoteEntity::class], version = 1, exportSchema = false)
 abstract class NoteDB : RoomDatabase(){
 
-    abstract fun noteDao(): NoteDao
+    abstract fun getNoteDao(): NoteDao
 
     companion object {
         @SuppressLint("StaticFieldLeak")
