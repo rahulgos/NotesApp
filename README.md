@@ -39,7 +39,7 @@ com.example.notesapp
 ├── viewmodel
 │   └── NoteViewModel.kt
 ├── repo
-|  └── NoteRepository.kt
+│  └── NoteRepository.kt
 
 
 ## 🚀 Getting Started
