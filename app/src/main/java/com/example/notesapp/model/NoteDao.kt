@@ -19,9 +19,6 @@ interface NoteDao {
     @Delete
     suspend fun delete(noteEntity: NoteEntity)
 
-    @Update
-    suspend fun update(note: NoteEntity)
-
     // Fetch all notes in reverse order (latest note comes first)
     @Query("SELECT * FROM notes_app_table ORDER BY id DESC")
     fun getAllNotes(): LiveData<List<NoteEntity>>
